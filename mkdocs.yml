@@ -1,18 +1,19 @@
 site_name: My Knowledge Base
 theme:
   name: material
-nav:
-  - Home: index.md
-  - HowTo:
-      - Git 基本: howto/git.md
-      - Arch 初期設定: howto/arch.md
 site_url: https://stone5656.github.io/My-Documents/    # 公開URL
 repo_url: https://github.com/Stone5656/My-Documents     # リポジトリ
+
 theme:
   name: material
   features:
-    - navigation.footer      # 前/次リンクなど（Materialの機能） :contentReference[oaicite:6]{index=6}
+    - navigation.footer
+
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
+
+plugins:
+  - search
+  - awesome-pages
