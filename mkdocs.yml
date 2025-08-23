@@ -7,13 +7,11 @@ repo_url: https://github.com/Stone5656/My-Documents     # リポジトリ
 theme:
   name: material
   features:
-    - navigation.footer
+  - navigation.tabs
+  - navigation.sections
+  - navigation.footer
 
 markdown_extensions:
   - admonition
   - toc:
       permalink: true
-
-plugins:
-  - search
-  - awesome-pages
