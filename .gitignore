@@ -2,6 +2,8 @@
 .vscode/
 vault/daily/
 vault/private/
+vault/public/
 # Obsidianの一部メタが気になるなら
 vault/.obsidian/*
 !vault/.obsidian/workspace.json
+site/*
