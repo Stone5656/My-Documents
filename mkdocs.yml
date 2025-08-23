@@ -1,0 +1,12 @@
+site_name: My Knowledge Base
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - HowTo:
+      - Git 基本: howto/git.md
+      - Arch 初期設定: howto/arch.md
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true

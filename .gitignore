@@ -1,0 +1,7 @@
+# Obsidian ローカル設定など
+.vscode/
+vault/daily/
+vault/private/
+# Obsidianの一部メタが気になるなら
+vault/.obsidian/*
+!vault/.obsidian/workspace.json
