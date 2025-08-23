@@ -15,3 +15,7 @@ markdown_extensions:
   - admonition
   - toc:
       permalink: true
+
+plugins:
+  - search
+  - awesome-pages
