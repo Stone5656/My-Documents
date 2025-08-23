@@ -14,20 +14,23 @@ jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: '3.x'
 
       - name: Install MkDocs + Material
         run: |
           python -m pip install --upgrade pip
           pip install mkdocs mkdocs-material
 
-      - name: Build
+      - name: Build (optional preview)
         run: mkdocs build --strict
 
-      - name: Deploy
+      - name: Deploy to gh-pages
         run: mkdocs gh-deploy --force --no-history
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -7,3 +7,4 @@ vault/public/
 vault/.obsidian/*
 !vault/.obsidian/workspace.json
 site/*
+sync_docs.sh
